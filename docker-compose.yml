@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+  et5003_ul: 
+    build: .
+    volumes: 
+      - .:/mnt
+    ports: 
+      - 8888:8888
+    container_name: pymc3_ul
